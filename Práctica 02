@@ -1,0 +1,65 @@
+#Practica 2
+import numpy as np
+import pandas as pd
+
+# Variable de texto
+texto = "Este es un ejemplo de economía."
+
+# Crear lista de números enteros
+lista_enteros = [1, 2, 3, 4, 5]
+
+# Mostrar lista de números enteros
+print("Lista de enteros:", lista_enteros)
+
+# Crear diccionario con información sobre productos y sus precios
+info_productos = {
+    'Producto1': 29.99,
+    'Producto2': 49.99,
+    'Producto3': 19.99
+}
+# Mostrar diccionario con información sobre productos
+print("Diccionario de productos:", info_productos)
+
+# Crear vector con diferentes tipos de datos
+vector_tipos_datos = [42, 3.14, 2 + 5j, "Hola", True, (1, 'dos')]
+
+# Reconocer tipos de datos en el vector
+tipos_reconocidos = [type(elemento) for elemento in vector_tipos_datos]
+
+# Mostrar vector y tipos de datos reconocidos
+print("Vector de diferentes tipos de datos:", vector_tipos_datos)
+print("Tipos de datos reconocidos:", tipos_reconocidos)
+
+# Crear vector de cadenas
+vector_cadenas = ['texto1', 'texto2', 'texto3']
+
+# Crear vector de booleanos
+vector_booleanos = [True, False, True]
+
+# Crear vector de tuplas
+vector_tuplas = [(1, 'uno'), (2, 'dos'), (3, 'tres')]
+
+# Mostrar vectores de cadenas, booleanos y tuplas
+print("Vector de Cadenas:", vector_cadenas)
+print("Vector de Booleanos:", vector_booleanos)
+print("Vector de Tuplas:", vector_tuplas)
+
+# Crear DataFrame con información sobre productos
+df_productos = pd.DataFrame({
+    'Producto': ['Producto1', 'Producto2', 'Producto3'],
+    'Precio': [29.99, 49.99, 19.99],
+    'Stock': [100, 50, 200]
+})
+
+# Mostrar DataFrame
+print("\nDataFrame de productos:")
+print(df_productos)
+
+########## Importacion de datos_excel ##############
+import pandas as pd
+import openpyxl
+
+imp_sri = pd.read_excel ("Clase 02/ventas_SRI.xlsx")
+
+# Mostrar datos de excel
+print(imp_sri)
